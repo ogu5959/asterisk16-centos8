@@ -33,10 +33,8 @@ WORKDIR /usr/src
 RUN wget http://downloads.asterisk.org/pub/telephony/asterisk/asterisk-16-current.tar.gz
 RUN tar zxf asterisk-16-current.tar.gz
 RUN rm -f asterisk-16-current.tar.gz
-#WORKDIR /usr/src/asterisk-16*
 WORKDIR /usr/src/asterisk-16.12.0
 RUN ./contrib/scripts/get_mp3_source.sh
-COPY menuselect.makeopts /usr/src/asterisk-16*/menuselect.makeopts
 RUN ./configure CFLAGS='-g -O2 -mtune=native' --libdir=/usr/lib64
 RUN make
 RUN make install

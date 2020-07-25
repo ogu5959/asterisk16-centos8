@@ -8,7 +8,7 @@
 
 `$ cd docker-asterisk16-centos8`
 
-`$ docker build -t="myrepository/asterisk01" .`
+`$ docker build -t="asterisk" .`
 
 실행방법 :
 

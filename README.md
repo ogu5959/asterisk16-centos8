@@ -16,7 +16,7 @@
 
 `# docker run -i -t --name asterisk -d -p 5060-5065:5060-5065/tcp -p 10000-10500:10000-10500/udp asterisk /bin/bash`
 
-다음에 실행한 이미지에 접속
+실행한 이미지에 접속
 
 `# docker exec -i -t asterisk /bin/bash`
 

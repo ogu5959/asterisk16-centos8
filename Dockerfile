@@ -40,4 +40,4 @@ RUN make
 RUN make install
 RUN make samples
 WORKDIR /root
-CMD ["/usr/sbin/asterisk", "-rvvv"]
+CMD ["/bin/bash"]
